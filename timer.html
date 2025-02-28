@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="timer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Digital-7&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav">
+        <button id="nav-timer">Timer</button>
+        <button id="nav-stopwatch">Stopwatch</button>
+        <button id="nav-clock">Clock</button>
+        <button id="nav-alarm">Alarm</button>
+    </div>
+    <div class="container">
+        <div id="timer-section">
+            <h1 class="title">Pomodoro Timer</h1>
+            <p class="timer" id="timer">00:00:00</p>
+            <div class="timer-form">
+                <div class="time-input">
+                    <button class="time-adjust" id="decrease-hours">-</button>
+                    <input type="number" id="set-hours" placeholder="HH" min="0">
+                    <button class="time-adjust" id="increase-hours">+</button>
+                </div>
+                <div class="time-input">
+                    <button class="time-adjust" id="decrease-minutes">-</button>
+                    <input type="number" id="set-minutes" placeholder="MM" min="0" max="59">
+                    <button class="time-adjust" id="increase-minutes">+</button>
+                </div>
+                <div class="time-input">
+                    <button class="time-adjust" id="decrease-seconds">-</button>
+                    <input type="number" id="set-seconds" placeholder="SS" min="0" max="59">
+                    <button class="time-adjust" id="increase-seconds">+</button>
+                </div>
+                <button id="set-time">Set Time</button>
+            </div>
+            <div class="button-wrapper">
+                <button id="start">Start</button>
+                <button id="stop">Stop</button>
+                <button id="reset">Reset</button>
+                <button id="fullscreen">Fullscreen</button>
+            </div>
+        </div>
+        <div id="stopwatch-section">
+            <h1 class="title">Stopwatch</h1>
+            <p class="stopwatch" id="stopwatch">00:00:00</p>
+            <div class="stopwatch-controls">
+                <button id="start-stopwatch">Start</button>
+                <button id="stop-stopwatch">Stop</button>
+                <button id="reset-stopwatch">Reset</button>
+                <button id="lap-stopwatch">Lap</button>
+            </div>
+            <div id="lap-times"></div>
+        </div>
+        <div id="clock-section">
+            <h1 class="title">Current Time</h1>
+            <p class="clock" id="clock">00:00:00</p>
+        </div>
+        <div id="alarm-section">
+            <h1 class="title">Alarm Clock</h1>
+            <div class="alarm-form">
+                <div class="time-input">
+                    <button class="time-adjust" id="decrease-alarm-hours">-</button>
+                    <input type="number" id="alarm-hours" placeholder="HH" min="0">
+                    <button class="time-adjust" id="increase-alarm-hours">+</button>
+                </div>
+                <div class="time-input">
+                    <button class="time-adjust" id="decrease-alarm-minutes">-</button>
+                    <input type="number" id="alarm-minutes" placeholder="MM" min="0" max="59">
+                    <button class="time-adjust" id="increase-alarm-minutes">+</button>
+                </div>
+                <div class="time-input">
+                    <button class="time-adjust" id="decrease-alarm-seconds">-</button>
+                    <input type="number" id="alarm-seconds" placeholder="SS" min="0" max="59">
+                    <button class="time-adjust" id="increase-alarm-seconds">+</button>
+                </div>
+                <button id="set-alarm">Set Alarm</button>
+                <button id="clear-alarm">Clear Alarm</button>
+            </div>
+            <p id="alarm-status"></p>
+        </div>
+    </div>
+    <script src="timer.js"></script>
+</body>
+</html>

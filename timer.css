@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 600px;
+  text-align: center;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.timer, .stopwatch, .clock {
+  font-size: 64px;
+  color: #ffffff;
+  margin: 20px 0;
+  font-family: "Digital-7", monospace;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+button {
+  font-size: 14px;
+  padding: 8px 16px;
+  margin: 5px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  background-color: #34495e;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#start {
+  background-color: #27ae60;
+}
+
+#stop {
+  background-color: #c0392b;
+}
+
+#reset {
+  background-color: #7f8c8d;
+}
+
+#fullscreen {
+  background-color: #3498db;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.nav button {
+  background-color: #2c3e50;
+}
+
+/* Stopwatch Styles */
+#stopwatch-section {
+  display: none;
+}
+
+.stopwatch-controls {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Clock Styles */
+#clock-section {
+  display: none;
+}
+
+/* Alarm Clock Styles */
+#alarm-section {
+  display: none;
+}
+
+.alarm-form, .timer-form {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.alarm-form input, .timer-form input {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #2c3e50;
+  color: #ffffff;
+  width: 60px;
+  text-align: center;
+}
+
+.alarm-form button, .timer-form button {
+  background-color: #8e44ad;
+}
+
+#alarm-status {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* Time Input Adjust Buttons */
+.time-input {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.time-adjust {
+  padding: 4px 8px;
+  font-size: 12px;
+  background-color: #34495e;
+}
+
+/* Fullscreen Styles */
+:fullscreen .container {
+  max-width: 100%;
+  padding: 40px;
+}
+
+:fullscreen .timer, :fullscreen .stopwatch, :fullscreen .clock {
+  font-size: 96px;
+}
+
+:fullscreen .title {
+  font-size: 36px;
+}
